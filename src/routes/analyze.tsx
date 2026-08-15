@@ -7,6 +7,7 @@ import { ThreatSignals } from "@/components/fraud/ThreatSignals";
 import { Transcript } from "@/components/fraud/Transcript";
 import { AIExplanation } from "@/components/fraud/AIExplanation";
 import { SafetyActions } from "@/components/fraud/SafetyActions";
+import { ReportActions } from "@/components/fraud/ReportActions";
 import { analyzeCall, type DemoKind } from "@/lib/fraud/api";
 import type { AnalysisResult } from "@/lib/fraud/types";
 

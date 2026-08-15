@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Waveform } from "./Waveform";
 
 const steps = [
   "🎙️ Transcribing call...",
@@ -22,6 +23,7 @@ export function AnalysisProgress() {
   return (
     <section className="glass animate-rise rounded-3xl p-6 sm:p-10">
       <h2 className="text-center font-display text-2xl font-bold">Analyzing your call</h2>
+      <Waveform />
       <div className="mx-auto mt-6 h-2 w-full max-w-xl overflow-hidden rounded-full bg-secondary">
         <div
           className="h-full rounded-full bg-primary transition-all duration-700 ease-out"
