@@ -173,3 +173,12 @@
     background-position: 200% 0;
   }
 }
+
+@keyframes wave {
+  from {
+    transform: scaleY(0.35);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
