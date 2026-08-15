@@ -13,8 +13,10 @@ import type { AnalysisResult } from "@/lib/fraud/types";
 type Search = { demo?: DemoKind };
 
 export const Route = createFileRoute("/analyze")({
-  validateSearch: (search: Record<string, unknown>): Search =>
-    search.demo === "scam" || search.demo === "safe" ? { demo: search.demo } : {},
+  validateSearch: (search: Record<string, unknown>): Search => {
+    const demo = search["demo"];
+    return demo === "scam" || demo === "safe" ? { demo } : {};
+  },
   head: () => ({
     meta: [
       { title: "Analyze a Call — FraudGuard AI" },
